@@ -1,0 +1,85 @@
+.BackGround{
+  background-color: orange;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 9vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.displayNone{
+  display: none;
+}
+.WaitListContainer{
+  width: 40%;
+  min-height: 90vh;
+  background-color: white;
+}
+.topSection{
+  margin: 0;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topSection h2{
+  font-size: 2.5vw;
+}
+.topSection h3{
+  text-align: center;
+}
+.mainBody{
+  padding: 2rem;
+}
+.ImageContainer{
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.ImageContainer img{
+  width: 100%;
+}
+.bottomSection{
+  box-shadow: none;
+  width: 100%;
+  height: 20vh;
+  margin: 0;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomSection .ContinueBtn{
+  width: 30%;
+  max-width: 92px;
+  height: 30%;
+  margin-right: 3vw;
+  background-color: rgba(246, 246, 50, 0.573);
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  padding: 0;
+}
+.ContinueBtn:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+}
+@media (max-width:1400px) {
+  .WaitListContainer{
+    width: 70%;
+  }
+}
+@media (max-width:768px) {
+  .WaitListContainer{
+    width: 80%;
+  }
+  p{
+    font-size: 3vw;
+  }
+  .ContinueBtn{
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,145 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+ }
+ .navCont{
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+   height: 100%;
+ }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ .logo{
+   width: 3%;
+ }
+ .menu {
+    display: flex;
+    align-items: center;
+ }
+ .menu li {
+    list-style: none;
+    margin-right: 20px;
+ }
+ .menu li:last-child {
+    margin-right: 0;
+ }
+ .menu a {
+    font-size: 1vw;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+ }
+ .menu a:hover {
+    transform: scale(1.2);
+    cursor:pointer;
+ }
+ .dropdown {
+   position: relative;
+ }
+ .dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+ }
+ .dropdown:hover .submenu {
+    display: block;
+ }
+ .sub-menu li {
+    margin: 0;
+ }
+ .submenu a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+ }
+ .mobilemenu {
+    display: none;
+ }
+ nav button {
+    background-color: #DDD615;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ nav button:hover {
+    transform: scale(1.2);
+  }
+  @media (max-width:1500px) {
+   .menu a {
+      font-size: 1.2vw;
+   }
+  }
+  @media (max-width:1200px) {
+   .menu a {
+      font-size: 2vw;
+   }
+   .logo{
+      width: 5%;
+   }
+  }
+ @media(max-width: 768px) {
+   .dropdown{
+      margin-left: 50vw;
+   }
+    .menu {
+       display: none;
+    }
+    .menu li {
+       margin-right: 0;
+       margin-bottom: 10px;
+    }
+    .submenu {
+       display: block;
+       position: static;
+       top: 0;
+       left: 0;
+       margin-top: 5px;
+       box-shadow: none;
+       text-align: center;
+       width: 120%;
+       z-index: 2;
+    }
+    .mobilemenu {
+       display: flex;
+       font-size: 5vw;
+       color: #333;
+       cursor: pointer;
+       align-items: center;
+       text-decoration: none;
+    }
+    nav button{
+      display: none;
+    }
+    .logo{
+      width: 10%;
+    }
+    @media (max-width:378px) {
+      .mobilemenu {
+         font-size: 7vw;
+      }
+    }
+ }
+ 
